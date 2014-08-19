@@ -22,6 +22,7 @@ double fallDelay = 0; //delay between change of Y coordinate when falling.
 int hasLevelLoaded = 0; // to check if level has been rendered. if yes, stop 
 int isJumping = 0, iJumped = 0; // check if player is jumping
 int isFalling = 0; // check if player is falling. 
+int playerhealth = 10; // Player health, default 100. Change accordingly
 
 void init()
 {
@@ -1581,7 +1582,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.055 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1607,7 +1608,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.055 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1633,7 +1634,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.055 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1659,7 +1660,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.055 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1685,7 +1686,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1711,7 +1712,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1737,7 +1738,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1763,7 +1764,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1789,7 +1790,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1815,7 +1816,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1841,7 +1842,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1867,7 +1868,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1893,7 +1894,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1919,7 +1920,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1945,7 +1946,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1971,7 +1972,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -1997,7 +1998,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -2023,7 +2024,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -2049,7 +2050,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -2075,7 +2076,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -2101,7 +2102,7 @@ void gravity()
 		{
 			isFalling = 1;
 			fallDelay = 0;
-			while ( fallDelay < 0.05 ) // Delay between each fall ^^
+			while ( fallDelay < 0.01 ) // Delay between each fall ^^
 			{
 				getInput();
 				update(g_timer.getElapsedTime());
@@ -2122,6 +2123,17 @@ void gravity()
 		}
 	} // if charLocation.Y == 22
 
+}
+
+void trap()
+{
+	if(charLocation.Y == 1)
+	{
+		if(line1[charLocation.X] == 'x')
+		{
+
+		}
+	}
 }
 
 void loadlevelone()
@@ -2219,6 +2231,9 @@ void loadlevelone()
 
 	while ( line22.length() < line1.length() )
 		line22 += " ";
+
+	while ( line23.length() < line1.length() )
+		line23 += " ";
 }
 
 void renderlevelone() // renders level one
@@ -2280,7 +2295,7 @@ void update(double dt)
     if (keyPressed[K_RIGHT] )
 		moveRight();
 
-	if ( keyPressed [K_SPACE] && isJumping == 0 && jumpDelay > 0.6) // When trying to jump, make sure you're not already jumping and you haven't jumped in the past 0.6 seconds
+	if ( keyPressed [K_SPACE] && isJumping == 0 && jumpDelay > 0.8) // When trying to jump, make sure you're not already jumping and you haven't jumped in the past 0.8 seconds
 		jump();
 
 	// PFFT. SCREW GRAVITY (not) 
@@ -2318,4 +2333,3 @@ void render()
 
     colour(0x0F);
 }
-
