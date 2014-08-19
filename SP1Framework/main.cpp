@@ -46,7 +46,7 @@ int main()
 
 void mainLoop()
 {
-    while (!g_quitGame)      // run this loop until user wants to quit 
+    while (g_quitGame == false)      // run this loop until user wants to quit 
 	{  
 		g_timer.startTimer();
 		while ( gamestate == MENU ) 
@@ -67,5 +67,5 @@ void mainLoop()
 			break;
 		}
 		initialisedornot = 0;
-	}    
+	}
 }
